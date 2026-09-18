@@ -10,9 +10,9 @@ Rather than only storing finished projects, I'm using this repository to show th
 
 ## 🚀 Progress
 
-**Current Progress:** Day 0 / 100
+**Current Progress:** Day 2 / 100
 
-`░░░░░░░░░░░░░░░░░░░░` 0%
+![Progress](https://img.shields.io/badge/Progress-2%25-blue)
 
 ---
 
@@ -43,8 +43,8 @@ Throughout this journey I'll progressively work with:
 
 | Day | Project | Concepts | Status |
 |---|---|---|---|
-| 01 | Brand Name Generator | Variables, strings, input/output | ⏳ |
-| 02 | Tip Calculator | Data types, arithmetic | ⏳ |
+| 01 | Band Name Generator | Variables, strings, input/output | ✅ Completed |
+| 02 | Tip Calculator | Data types, arithmetic | ✅ Completed |
 | 03 | Treasure Island | Conditional statements | ⏳ |
 | 04 | Rock Paper Scissors | Randomisation, lists | ⏳ |
 | 05 | Password Generator | Loops, lists, randomisation | ⏳ |
