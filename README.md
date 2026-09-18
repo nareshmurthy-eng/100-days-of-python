@@ -43,8 +43,8 @@ Throughout this journey I'll progressively work with:
 
 | Day | Project | Concepts | Status |
 |---|---|---|---|
-| 01 | Band Name Generator | Variables, strings, input/output | ✅ Completed |
-| 02 | Tip Calculator | Data types, arithmetic | ✅ Completed |
+| 01 | [Band Name Generator](./day-001-band_name_generator) | Variables, strings, input/output | ✅ Completed |
+| 02 | [Tip Calculator](./day-002-tip_calculator/) | Data types, arithmetic | ✅ Completed |
 | 03 | Treasure Island | Conditional statements | ⏳ |
 | 04 | Rock Paper Scissors | Randomisation, lists | ⏳ |
 | 05 | Password Generator | Loops, lists, randomisation | ⏳ |
