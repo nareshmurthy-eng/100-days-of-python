@@ -1,0 +1,76 @@
+print("Hello! Welcome to Python Pizza\n")
+bill = 0
+
+#Pizza size pricing
+print("Small pizza : $15 \nMedium pizza: $20 \nLarge pizza : $25\n")
+
+# Asking for the pizza size
+print("Type - S for Small Pizza, M for Medium and L for Large")
+size = input("What pizza size do you wish to eat today? ").lower()
+
+#Validation for size
+if size == 's' or size == 'm' or size == 'l':
+    print(f"\n-----------------------------\n")
+else:
+    print("Invalid input, Try again!")
+    exit()
+
+print("\nToppings")
+
+#Pepperoni and Cheese Pricing
+print("\nPepperoni for Small Pizza = $2 \nPepperoni for Medium or Large Pizza = $3 \nExtra Cheese = $1 ")
+
+#Asking for pepperoni addition
+# p = pepperoni
+print("\nYou need to type 'Y' for \"Yes\" and 'N' for \"No\"")
+p = input("Do you want to add pepperoni? ").lower()
+
+#Validation for pepperoni
+if p == 'y' or p == 'n':
+    print(f"\n-----------------------------\n")
+else:
+    print("Invalid input, Try again!")
+    exit()
+
+# c = cheese
+c = input("Do you want to addon Cheese? ").lower()
+
+#Validation for Cheese
+if c == 'y' or c == 'n':
+    print(f"\n-----------------------------\n")
+else:
+    print("Invalid input, Try again!")
+    exit()
+
+#Now using if/else statements to get the final billing
+
+#If/Else for the size
+if size == 's':
+    bill = 15
+    if p == 'y':
+        bill +=2
+    if c == 'y':
+        bill += 1
+elif size == 'm':
+    bill = 20
+    if p == 'y':
+        bill += 3
+    if c == 'y':
+        bill += 1
+elif size == 'l':
+    bill = 25
+    if p == 'y':
+        bill += 3
+    if c == 'y':
+        bill += 1
+else:
+    print("Invalid input, try again!")
+    
+print(f"Your total bill would be ${bill}")
+
+
+
+
+
+
+
