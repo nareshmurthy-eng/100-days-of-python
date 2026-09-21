@@ -1,0 +1,111 @@
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+
+print("Welcome to \"Treasure Hunt\"")
+print("You need to find the treasure in the lost city.\n")
+print("*** Note - Answer like y for yes, n for no, r for right, and so on! ***\n")
+
+
+# Asking whether you want to play or not
+start = input("Shall we start? Yes or No: ").lower()
+
+if start == 'y' or start == 'yes':
+    print("Great, let's begin the adventure!")
+elif start == 'n' or start == 'no':
+    print("Ohh! Okay. Kindly come back when you want to play.")
+    exit()
+else:
+    print("Invalid input. Try again!")
+    exit()
+
+
+# Welcoming with name and place
+print("\nNow let's choose the path to reach the island!")
+print("But before that, could you please confirm your name and country?")
+
+name = input("\nCould you kindly confirm your name? ")
+place = input("Which country are you from? ")
+
+print(f"\nHello {name}! Let's start our journey from {place} to the Imperial Islands for the treasure hunt.")
+
+
+# Travel to the Imperial Islands
+print("\nFlight or Cruise")
+
+travel = input(f"How do you want to reach the Imperial Islands from {place}? ").lower()
+
+if travel == 'flight' or travel == 'f':
+    print("Great! You are near the airport exit of the Imperial Islands now.")
+elif travel == 'cruise' or travel == 'c':
+    print("Great! You are near the port exit of the Imperial Islands now.")
+else:
+    print("Aliens kidnapped you! Try again!")
+    exit()
+
+
+# From the exit - fd = First Decision
+fd = input("\nWhich direction do you want to go, left or right from the exit? ").lower()
+
+if fd == 'right' or fd == 'r':
+    print("Great! You find an abandoned ice-cream shop and enter it.")
+elif fd == 'left' or fd == 'l':
+    print("Ohh no! Zombies attacked you! Try again!")
+    exit()
+else:
+    print("Aliens kidnapped you! Try again!")
+    exit()
+
+
+# Inside the abandoned ice-cream shop
+print("\nInside, there is nobody there.")
+print("The lights are flickering, the freezer is still running, and on the counter you find a note:")
+
+print("\n--------------------------------------------------")
+print("\"The treasure belongs to the one who chooses what never melts.\"")
+print("--------------------------------------------------")
+
+
+# Final treasure decision
+print("\nYou see two ice creams:")
+
+print("\n1. Golden Key")
+print("2. Midnight Crunch")
+
+treasure = input("\nWhich one do you choose? Golden Key or Midnight Crunch? ").lower()
+
+if treasure == 'golden key' or treasure == 'goldenkey' or treasure == 'golden_key' or treasure == 'g':
+    print("\nOh no! The Golden Key melts in your hands.")
+    print("It was made of ice cream!")
+    print("The treasure is lost. Try again!")
+    exit()
+
+elif treasure == 'midnight crunch' or treasure == 'midnightcrunch' or treasure == 'midnight_crunch' or treasure == 'm':
+    print("\nThe ice cream slowly melts away...")
+    print("But the crunchy cone remains!")
+    print("\nYou solved the riddle!")
+    print(f"Congratulations {name}! You found the hidden treasure!")
+    print("You won gold bars worth $10 million! 🏆")
+
+else:
+    print("\nAliens kidnapped you! Try again!")
+    exit()
