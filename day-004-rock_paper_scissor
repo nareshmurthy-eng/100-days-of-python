@@ -1,0 +1,83 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+print("Welcome to the game - Rock, Paper, Scissor\n")
+
+print("Note! Choose numbers: \nRock - 1 \nPaper - 2  \nScissor -3")
+user = int(input("\nKindly choose Rock, paper or Scissor "))
+ai = random.randint(1, 3)
+
+#User Choices
+if user == 1:
+    print("User chose\n", rock)
+elif user == 2:
+    print("User chose\n", paper)
+elif user == 3:
+    print("User chose\n", scissors)
+else:
+    print('Invalid Input, Try again')
+    exit()
+
+print("\nVS\n")
+
+#AI choices
+if ai == 1:
+    print("AI chose\n", rock)
+elif ai == 2:
+    print("AI chose\n", paper)
+else:
+    print("AI chose\n", scissors)
+
+#Case-1 Rock vs others
+if user == 1 and ai == 1:
+    print("The game's a tie, try again ")
+elif user == 1 and ai == 2:
+    print('Oh no! AI won')
+elif user == 1 and ai == 3:
+    print('Congratulations! You won!')
+
+#Case - 2 Paper vs Others
+elif user == 2 and ai == 2:
+    print("The game's a tie, try again ")
+elif user == 2 and ai == 3:
+    print('Oh no! AI won')
+elif user == 2 and ai == 1:
+    print('Congratulations! You won!')
+
+#Case - 3 Scissors vs Others
+elif user == 3 and ai == 3:
+    print("The game's a tie, try again ")
+elif user == 3 and ai == 1:
+    print('Oh no! AI won')
+elif user == 3 and ai == 2:
+    print('Congratulations! You won!')
+
+else:
+    print('Invalid Input!')
+    exit()
+
