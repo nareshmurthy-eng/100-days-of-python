@@ -10,9 +10,9 @@ Rather than only storing finished projects, I'm using this repository to show th
 
 ## 🚀 Progress
 
-**Current Progress:** Day 4 / 100
+**Current Progress:** Day 5 / 100
 
-![Progress](https://img.shields.io/badge/Progress-4%25-blue)
+![Progress](https://img.shields.io/badge/Progress-5%25-blue)
 
 ---
 
@@ -45,10 +45,11 @@ Throughout this journey I'll progressively work with:
 |---|---|---|---|
 | 01 | [Band Name Generator](./day-001-band_name_generator) | Variables, strings, input/output | ✅ Completed |
 | 02 | [Tip Calculator](./day-002-tip_calculator/) | Data types, arithmetic | ✅ Completed |
-| 03 | [Treasure Island](./day-003-treasure_island/) | Conditional statements | ⏳ |
-| 04 | [Rock Paper Scissors](./day-004-rock_paper_scissor/) | Randomisation, lists | ⏳ |
-| 05 | Password Generator | Loops, lists, randomisation | ⏳ |
+| 03 | [Treasure Island](./day-003-treasure_island/) | Conditional statements | ✅ Completed |
+| 04 | [Rock Paper Scissors](./day-004-rock_paper_scissor/) | Randomisation, lists | ✅ Completed |
+| 05 | [Password Generator](./day-005-random_password_generator/) | Loops, lists, randomisation | ✅ Completed |
 | 06 | Escape the Maze | Functions, loops | ⏳ |
+| 07 | Hangman | ⏳ |
 
 More projects will be added as I progress.
 
